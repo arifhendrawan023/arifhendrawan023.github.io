@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: inline;
+}
+
+nav#head {
+    display: flex;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav img {
+    position: relative;
+    top: 20%;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(121, 30, 109);
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+div h1, p {    
+    margin-block-start: 0em;
+    margin-block-end: 0.2em;
+}
+
+#judulWeb {
+    padding: 18px;
+    font-size: 20px;
+    background-color: rgb(121, 30, 109);
+    text-align: center;
+    color: white;
+}
+
+.profile img {
+    width: 200px;
+    overflow: auto;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.card, .profile {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#profilVideo {
+    margin-top: 0;
+    padding-bottom: 0px;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+div#content {
+    float: left;
+    width: 70%;
+}
+
+article#wisata {
+    display: flex;
+    flex-direction: column;
+}
+
+.tempatWisata {
+    padding: 0px;
+}
+
+aside {
+    float: right;
+    color: #ffffff;
+    width: 30%;
+    padding-left: 0px;
+}
+
+article#aboutPurworejo {
+    display: flex;
+    width: 100%;
+    padding: 20px 0px 20px 20px;
+    overflow: auto;
+}
+
+div img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;  
+}
+
+div#imgHeader img {
+    padding-bottom: 0px;  
+}
+
+.map {
+    flex-grow: 1;
+    margin: auto 0px auto 5px;
+}
+
+.materi {
+    flex-grow: 1;
+    margin-right: 5px;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: rgb(121, 30, 109);
+    text-align: center;
+    font-weight: bold;
+}
+
+.galeri {
+    display: flex;
+    flex-direction: column;
+}
+
+.foto {
+    padding-bottom: 10px;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(121, 30, 109);
+}
+
+
+@media screen and (max-width: 1000px) {
+    div#content,
+    aside, .map, .materi {
+        width: 100%;
+        padding: 0;
+    }
+    article#aboutPurworejo {
+        flex-direction: column;
+    }
+    iframe {
+        width: 300px;
+    }
+}
